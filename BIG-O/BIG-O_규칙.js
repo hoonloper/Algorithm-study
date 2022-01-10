@@ -1,4 +1,4 @@
-// Big - O의 4가지 계산 규칙
+/* Big - O의 4가지 계산 규칙 */
 
 // Big - O Rule 1 : Worst Case
 // 최악의 상황
@@ -48,4 +48,37 @@ items의 길이가 1억이라면 1을 더하든, 100을 더하든, 1억을 2로 
 
 따라서 상수는 모두 제거하고 O(n)으로 표기해야 합니다.
 즉, O(n) Linear Time입니다.
+*/
+
+function compareBoxes(boxes) {
+  boxes.forEach(function (boxes) {
+    console.log(boxes);
+  });
+  boxes.forEach(function (boxes) {
+    console.log(boxes);
+  });
+}
+
+/*
+위 코드 또한 O(n)이 두 번 반복도어 O(2n)이지만, 상수는 버리기 때문에 O(n)으로 표기합니다.
+
+TIP : Big-O 계산은 정확한 속도를 계산하려고 하는 것이 아닙니다.
+*/
+
+// Big - O Rule 3 : Different Terms for Inputs
+function compareBoxes2(boxes, boxes2) {
+  // O(a)
+  boxes.forEach(function (boxes) {
+    console.log(boxes);
+  });
+  // O(b)
+  boxes2.forEach(function (boxes) {
+    console.log(boxes);
+  });
+}
+
+/*
+해당 코드는 인자 값이 서로 다릅니다. 
+때문에 각 인자의 크기에 따라 작업 횟수가 달라집니다.
+인자 값이 다를 경우 따로 계산해줘야 하기 때문에 이 경우 O(a+b)입니다.
 */
