@@ -82,3 +82,17 @@ function compareBoxes2(boxes, boxes2) {
 때문에 각 인자의 크기에 따라 작업 횟수가 달라집니다.
 인자 값이 다를 경우 따로 계산해줘야 하기 때문에 이 경우 O(a+b)입니다.
 */
+
+// Big - O Rule 4 : Drop non Dominants
+function printAllNumber(numbers) {
+  // O(n)
+  numbers.forEach(function (number) {
+    console.log(number);
+  });
+  numbers.forEach(function (firstNumber) {
+    numbers.forEach(function (secondNumber) {
+      console.log(firstNumber + secondNumber); // O(n^2)
+    });
+  });
+}
+printAllNumber([1, 2, 3, 4, 5]);
