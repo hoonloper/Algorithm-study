@@ -96,3 +96,8 @@ function printAllNumber(numbers) {
   });
 }
 printAllNumber([1, 2, 3, 4, 5]);
+
+/*
+해당 코드의 경우 O(n + n^2)입니다.
+하지만 numbers 배열의 길이가 커질수록 n^2의 작업 횟수가 극적으로 증가하기 때문에 표기법은 O(n^2)입니다.
+*/
