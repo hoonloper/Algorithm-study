@@ -27,7 +27,7 @@ const OnAlgorithm = (array) => {
 function print(items) {
   console.log(items[0]); // O(1)
 
-  let middleIndex = Math.floor(items.length / 2);
+  const middleIndex = Math.floor(items.length / 2);
   let index = 0;
 
   // O(n/2)
