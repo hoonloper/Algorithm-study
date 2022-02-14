@@ -1,0 +1,23 @@
+{
+  "name": "algorithm-study",
+  "version": "1.0.0",
+  "description": "알고리즘 작성에 필요한 지식들을 직접 실습하며 작성하는 저장소입니다 :D 꾸준히 업데이트 하겠습니다 !",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yonghoon-Jung/Algorithm-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yonghoon-Jung/Algorithm-study/issues"
+  },
+  "homepage": "https://github.com/Yonghoon-Jung/Algorithm-study#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
