@@ -1,25 +1,23 @@
-// for (let i = 0; i < 5; i++) {
-//   console.log(i);
-// }
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
 
-// for (let j = 0; j < 5; j++) {
-//   console.log(j);
-// }
-// /*---------------------------*/
-// for (let i = 0; i < 5; i++) {
-//   for (let j = 0; j < 5; j++) {
-//     console.log(i + " " + j);
-//   }
-// }
+for (let j = 0; j < 5; j++) {
+  console.log(j);
+}
+/*---------------------------*/
+for (let i = 0; i < 5; i++) {
+  for (let j = 0; j < 5; j++) {
+    console.log(i + " " + j);
+  }
+}
 
-// function func(n) {
-//   if (n <= 1) {
-//     return 1;
-//   }
-//   return func(n - 1) + func(n - 1);
-// }
-
-// console.log(func(n));
+function func(n) {
+  if (n <= 1) {
+    return 1;
+  }
+  return func(n - 1) + func(n - 1);
+}
 
 // O(N)의 시간 복잡도를 가진 코드
 /* 배열을 한 번 읽든 두 번 읽든 big-O 시간을 구할 때는 아무런 영향을 주지 않음*/
@@ -110,3 +108,8 @@ function exam7(arr) {
     arr[other] = temp;
   }
 }
+
+/* 
+O(N)과 같은 목록
+- O(N+P), P
+*/
