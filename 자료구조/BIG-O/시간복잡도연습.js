@@ -5,7 +5,9 @@ for (let i = 0; i < 5; i++) {
 for (let j = 0; j < 5; j++) {
   console.log(j);
 }
+
 /*---------------------------*/
+
 for (let i = 0; i < 5; i++) {
   for (let j = 0; j < 5; j++) {
     console.log(i + " " + j);
@@ -104,12 +106,8 @@ function exam7(arr) {
   for (let i = 0; i < arr.length; i++) {
     let other = arr.length - i - 1;
     let temp = arr[i];
+
     arr[i] = arr[other];
     arr[other] = temp;
   }
 }
-
-/* 
-O(N)과 같은 목록
-- O(N+P), P
-*/
