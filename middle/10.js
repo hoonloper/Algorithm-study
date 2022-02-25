@@ -24,7 +24,7 @@ function solution(num) {
     } else if (3000 <= number[i] && number[i] < 4000) {
       brand["한성"].push(number[i]);
       brand["한성"].sort((a, b) => a - b);
-    } else if (4000 <= number[i] && number[i] < 5000) {
+    } else if (4000 <= number[i] && number[i] < 5000)  {
       brand["레노버"].push(number[i]);
       brand["레노버"].sort((a, b) => a - b);
     } else if (5000 <= number[i] && number[i] < 6000) {

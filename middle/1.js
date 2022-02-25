@@ -2,8 +2,8 @@ const n = 5;
 const s = "안녕";
 function solution(n, s) {
   const arr = [];
-  for (let i = 1; i <= n; i++) {
-    arr[i - 1] = s;
+  for (let i = 0; i < n; i++) {
+    arr[i] = s;
   }
 
   return arr.join("");
