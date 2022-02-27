@@ -3,8 +3,12 @@ const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
 let input = fs.readFileSync(filePath).toString().split("\n");
 const val = input[0].split(" ");
 
-function solution(val) {
-  return Number(val[0]) + Number(val[1]);
+function solution(a, b) {
+  console.log(a + b);
+  console.log(a - b);
+  console.log(a * b);
+  console.log(Math.floor(a / b));
+  console.log(a % b);
 }
 
-console.log(solution(val));
+solution(Number(val[0]), Number(val[1]));

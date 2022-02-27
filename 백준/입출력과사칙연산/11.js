@@ -3,8 +3,8 @@ const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
 let input = fs.readFileSync(filePath).toString().split("\n");
 const val = input[0].split(" ");
 
-function solution(val) {
-  return Number(val[0]) + Number(val[1]);
+function solution(year) {
+  console.log(year - 543);
 }
 
-console.log(solution(val));
+solution(val[0]);

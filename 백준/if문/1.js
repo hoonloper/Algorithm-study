@@ -3,8 +3,10 @@ const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
 let input = fs.readFileSync(filePath).toString().split("\n");
 const val = input[0].split(" ");
 
-function solution(val) {
-  return Number(val[0]) + Number(val[1]);
+function solution(A, B) {
+  if (A > B) return ">";
+  else if (A < B) return "<";
+  else return "==";
 }
 
-console.log(solution(val));
+console.log(solution(Number(val[0]), Number(val[1])));
