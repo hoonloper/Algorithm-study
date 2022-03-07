@@ -10,6 +10,6 @@ function solution(n) {
       }
     }
   }
-  console.log(arr);
+  
   return arr.filter((e) => e).length;
 }
