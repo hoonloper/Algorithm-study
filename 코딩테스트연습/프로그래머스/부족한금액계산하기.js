@@ -1,9 +1,9 @@
-function solution(n) {
-  const answer = [];
+function solution(price, money, count) {
+  let answer = 0;
 
-  for (let i = 1; i <= n; i++) {
-    if (n % i === 1) answer.push(i);
+  for (let i = 1; i <= count; i++) {
+    answer += price * i;
   }
 
-  return Math.min(...answer);
+  return money - answer > 0 ? 0 : answer - money;
 }
