@@ -16,17 +16,17 @@
 // }
 
 // 에러가 없는 예시
-// try {
-//   console.log("try 시작");
+try {
+  console.log("try 시작");
 
-//   console.log("에러 없음");
+  console.log("에러 없음");
 
-//   console.log("try 끝");
-// } catch (error) {
-//   console.log("에러가 없으니 catch문을 무시됨");
-// } finally {
-//   console.log("에러 유무의 관계없이 무조건 실행됨!");
-// }
+  console.log("try 끝");
+} catch (error) {
+  console.log("에러가 없으니 catch문을 무시됨");
+} finally {
+  console.log("에러 유무의 관계없이 무조건 실행됨!");
+}
 
 // 에러가 발생한 예시
 // try {
