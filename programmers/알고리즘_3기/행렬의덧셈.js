@@ -7,7 +7,6 @@ const arr2 = [
   [3, 4],
   [5, 6],
 ];
-
 /*
 첫번째 풀이
 function solution(arr1, arr2) {
