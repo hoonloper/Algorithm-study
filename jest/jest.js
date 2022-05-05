@@ -1,5 +1,11 @@
-function double(number) {
-  return number * 2;
-}
+const fn = {
+  add: (num1, num2) => num1 + num2,
+  mul: (num1, num2) => num1 * num2,
+  makeUser: (name, age) => ({
+    name,
+    age,
+    gender: undefined,
+  }),
+};
 
-module.exports = double;
+module.exports = fn;
