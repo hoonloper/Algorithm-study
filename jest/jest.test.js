@@ -71,7 +71,6 @@ describe("사람 정보 확인", () => {
       age: 25,
       money: undefined,
     };
-
     expect(person).toEqual({
       name: "홍길동",
       age: 25,
@@ -86,7 +85,6 @@ describe("사람 정보 확인", () => {
       age: 25,
       money: undefined,
     };
-
     expect(person).toEqual({
       name: "홍길동",
       age: 25,
