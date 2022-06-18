@@ -4,5 +4,13 @@ interface Types {
   bool: boolean;
 }
 class typeTest {
-  constructor(private readonly types: Types) {}
+  constructor() {}
+
+  testFn() {
+    const typeVar: Types = {
+      str: "문자열",
+      num: 1,
+      bool: true,
+    };
+  }
 }
