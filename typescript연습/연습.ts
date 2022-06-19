@@ -12,5 +12,7 @@ class typeTest {
       num: 1,
       bool: true,
     };
+
+    console.log(typeVar);
   }
 }
