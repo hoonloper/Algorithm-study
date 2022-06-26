@@ -13,7 +13,7 @@ class typeTest {
       bool: true,
     };
 
-    console.log("typeVar");
+    console.log(typeVar);
 
     return typeVar;
   }
