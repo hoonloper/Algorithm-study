@@ -2,6 +2,7 @@ interface Types {
   str: string;
   num: number;
   bool: boolean;
+  fn: any;
 }
 class typeTest {
   constructor() {}
@@ -11,6 +12,9 @@ class typeTest {
       str: "문자열",
       num: 1,
       bool: true,
+      fn: () => {
+        return 10;
+      },
     };
 
     return typeVar;
