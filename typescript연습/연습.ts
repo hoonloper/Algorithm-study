@@ -17,6 +17,6 @@ class typeTest {
       },
     };
 
-    return typeVar;
+    return typeVar.fn();
   }
 }
