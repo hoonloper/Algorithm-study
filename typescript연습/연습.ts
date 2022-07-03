@@ -3,6 +3,7 @@ interface Types {
   num: number;
   bool: boolean;
   fn: any;
+  fn2: any;
 }
 class typeTest {
   constructor() {}
@@ -15,8 +16,13 @@ class typeTest {
       fn: () => {
         return 10;
       },
+      fn2: {
+        fn3: () => {
+          return "test Function";
+        },
+      },
     };
 
-    return typeVar.fn();
+    return typeVar.fn2.fn3();
   }
 }
