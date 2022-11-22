@@ -9,6 +9,7 @@ const solution = ([len, time], arr) => {
       dy[j] = Math.max(dy[j], dy[j - pt] + ps);
     }
   }
+
   answer = dy[time];
 
   return answer;
