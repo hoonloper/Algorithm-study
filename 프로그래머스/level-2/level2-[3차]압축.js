@@ -1,8 +1,8 @@
 function solution(msg) {
   const answer = [];
-  let nextWord = '';
-  let lastCount = 27;
-  const dir = {
+  let next = '';
+  let alphasLength = 27;
+  const alphas = {
     A: 1,
     B: 2,
     C: 3,
@@ -31,17 +31,16 @@ function solution(msg) {
     Z: 26,
   };
   const s = msg.split('').reduce((acc, cur) => {
-    nextWord = acc + cur;
-    if (dir[nextWord] === undefined) {
-      dir[nextWord] = lastCount++;
-    } else {
+    next = acc + cur;
+    if (alphas[next]) {
       return acc + cur;
     }
-    if (dir[acc] !== undefined) answer.push(dir[acc]);
+    alphas[next] = alphasLength++;
+    if (alphas[acc]) answer.push(alphas[acc]);
     return cur;
-  });
+  }, '');
 
-  answer.push(dir[s]);
+  answer.push(alphas[s]);
 
   return answer;
 }
