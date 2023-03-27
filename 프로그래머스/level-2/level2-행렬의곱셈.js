@@ -5,7 +5,6 @@ function solution(arr1, arr2) {
     )
   );
 }
-
 /*
 function solution(arr1, arr2) {
     const answer = []
