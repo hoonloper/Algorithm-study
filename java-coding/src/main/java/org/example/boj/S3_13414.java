@@ -1,14 +1,13 @@
 package org.example.boj;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.LinkedHashSet;
+import java.io.*;
+import java.util.*;
 
 public class S3_13414 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         String[] kl = br.readLine().split(" ");
         int k = Integer.parseInt(kl[0]);
@@ -24,10 +23,17 @@ public class S3_13414 {
         }
 
         int count = 0;
+        StringBuilder answer = new StringBuilder();
         for(String x : set){
             count++;
-            System.out.println(x);
+            answer.append(x).append("\n");
             if(count == k) break;
         }
+
+        bw.write(answer.toString());
+
+        br.close();
+        bw.flush();
+        bw.close();
     }
 }
