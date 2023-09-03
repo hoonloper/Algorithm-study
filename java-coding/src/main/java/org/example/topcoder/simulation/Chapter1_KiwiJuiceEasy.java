@@ -1,4 +1,4 @@
-package org.example.topcoder.시뮬레이션;
+package org.example.topcoder.simulation;
 
 import java.util.Arrays;
 
