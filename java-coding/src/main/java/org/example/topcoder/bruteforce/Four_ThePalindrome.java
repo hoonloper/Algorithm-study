@@ -1,0 +1,23 @@
+package org.example.topcoder.bruteforce;
+
+public class Four_ThePalindrome {
+    public static void main(String[] args) {
+        String s = "qwerty";
+        int answer = find(s);
+
+        System.out.println(answer);
+    }
+
+    public static int find(String s) {
+        for (int i = s.length(); ; i++) {
+            boolean flag = true;
+            for(int j = 0; j < s.length(); j++) {
+                if((i - j - 1) < s.length() && s.charAt(j) != s.charAt(i - j - 1)) {
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag) return i;
+        }
+    }
+}
