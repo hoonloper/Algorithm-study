@@ -8,7 +8,29 @@ public class One_DP_Knapsack {
         int[] ps = {2,3,2,3,6};
         int maxw = 10;
         dp(ws,ps,maxw);
+        customDp(ws, ps, maxw);
     }
+    private static void customDp(int[] ws, int[] ps, int maxw) {
+        int ans = 0;
+        int[][] dp = new int[ws.length + 1][maxw + 1];
+
+        for(int x = 0; x < ws.length; x++) {
+            for(int z = 0; z <= maxw; z++) {
+                if(z + ws[x] <= maxw) {
+                    dp[x + 1][z + ws[x]] = Math.max(dp[x + 1][z + ws[x]], dp[x][z] + ps[x]);
+                    ans = Math.max(ans, dp[x + 1][z + ws[x]]);
+                }
+            }
+        }
+        System.out.println(ans);
+    }
+
+
+
+
+
+
+
 
 
 
@@ -27,7 +49,7 @@ public class One_DP_Knapsack {
 
         for(int[] d : dp) {
 
-            System.out.println(Arrays.toString(d));
+//            System.out.println(Arrays.toString(d));
         }
     }
 }
