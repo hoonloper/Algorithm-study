@@ -10,15 +10,17 @@ public class One_DP_Knapsack {
         dp(ws,ps,maxw);
     }
 
-    public static void dp(int[] ws, int[] ps, int maxw) {
+
+
+    private static void dp(int[] ws, int[] ps, int maxw) {
         int[][] dp = new int[6][11];
         int ret = 0;
 
-        for(int i = 0; i < ws.length; i++) {
-            for(int j = 0; j <= maxw; j++) {
-                if(j + ws[i] <= maxw) {
-                    dp[i + 1][j + ws[i]] = Math.max(dp[i + 1][j + ws[i]], dp[i][j] + ps[i]);
-                    ret = Math.max(dp[i+1][j + ws[i]], ret);
+        for(int x = 0; x < ws.length; x++) {
+            for(int z = 0; z <= maxw; z++) {
+                if(z + ws[x] <= maxw) {
+                    dp[x + 1][z + ws[x]] = Math.max(dp[x + 1][z + ws[x]], dp[x][z] + ps[x]);
+                    ret = Math.max(dp[x+1][z + ws[x]], ret);
                 }
             }
         }
