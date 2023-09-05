@@ -1,5 +1,7 @@
 package org.example.topcoder.dp;
 
+import java.util.Arrays;
+
 public class One_DP_Knapsack {
     public static void main(String[] args) {
         int[] ws = {3,4,1,2,3};
@@ -8,8 +10,44 @@ public class One_DP_Knapsack {
 //        dp(ws,ps,maxw);
 //        customDp(ws, ps, maxw);
 //        customDp2(ws, ps, maxw);
-        customDp3(ws, ps, maxw);
+//        customDp3(ws, ps, maxw);
+
+
+
+        long[] wsl = {3_000_000_000L,4_000_000_000L,1_000_000_000L,2_000_000_000L,3_000_000_000L};
+        long[] psl = {2,3,1,3,6};
+        long maxwl = 10_000_000_000L;
+        dp_big_number(wsl, psl, maxwl);
     }
+
+    private static void dp_big_number(long[] ws, long[] ps, long maxw) {
+        int sum = 0;
+        for(int i = 0; i < ps.length; i++) {
+            sum += ps[i];
+        }
+
+        long[][] dp = new long[ps.length + 1][sum + 1];
+        long ans = 0;
+        for(int i = 0; i < ps.length; i++) {
+            for(int j = 0; j <= sum; j++) {
+                if(j + ps[i] <= sum) {
+                    int jIndex = (int) (j + ps[i]);
+                    dp[i + 1][jIndex] = Math.max(dp[i + 1][jIndex], dp[i][j] + ws[i]);
+                }
+            }
+        }
+        for(int i = 0; i < sum; i++) {
+            if(maxw >= dp[ps.length][i]) {
+                ans = i;
+            }
+        }
+        System.out.println(ans);
+    }
+
+
+
+
+
 
     private static void customDp3(int[] ws, int[] ps, int maxw) {
         int ans = 0;
