@@ -7,8 +7,28 @@ public class One_DP_Knapsack {
         int maxw = 10;
 //        dp(ws,ps,maxw);
 //        customDp(ws, ps, maxw);
-        customDp2(ws, ps, maxw);
+//        customDp2(ws, ps, maxw);
+        customDp3(ws, ps, maxw);
     }
+
+    private static void customDp3(int[] ws, int[] ps, int maxw) {
+        int ans = 0;
+        int[][] dp = new int[ws.length + 1][maxw + 1];
+
+        for(int i = 0; i < ws.length; i++) {
+            for(int j = 0; j <= maxw; j++) {
+                if(j + ws[i] <= maxw) {
+                    dp[i + 1][j + ws[i]] = Math.max(dp[i + 1][j + ws[i]], dp[i][j] + ps[i]);
+                    ans = Math.max(dp[i + 1][j + ws[i]], ans);
+                }
+            }
+        }
+        System.out.println(ans);
+    }
+
+
+
+
 
     private static void customDp2(int[] ws, int[] ps, int maxw) {
         int ans = 0;
