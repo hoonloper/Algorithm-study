@@ -10,10 +10,41 @@ public class Two_DP_CorporationSalary {
                 "YNYNNN",
                 "YNNYNN"
         };
-        dp(relations);
+//        dp(relations);
+        totalSalary(relations);
     }
 
     private static long[] salaries;
+
+    private static void totalSalary(String[] relations) {
+        salaries = new long[relations.length];
+
+        long total = 0;
+        for(int i = 0; i < relations.length; i++) {
+            total += getSalary2(i, relations);
+        }
+        System.out.println(total);
+    }
+
+    private static long getSalary2(int i, String[] relations) {
+        if(salaries[i] == 0) {
+            String relation = relations[i];
+            long salary = 0;
+            for(int j = 0; j < relation.length(); j++) {
+                if(relation.charAt(j) == 'Y') {
+                    salary += getSalary2(j, relations);
+                }
+            }
+            if(salary == 0) salary = 1;
+            salaries[i] = salary;
+        }
+        return salaries[i];
+    }
+
+
+
+
+
 
     private static void dp(String[] relations) {
         salaries = new long[relations.length];

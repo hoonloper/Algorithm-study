@@ -1,0 +1,34 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ë™¿²8È¸ð©¦1
+Z
+java:S1854	"8Remove this useless assignment to local variable "maxw".(üðè„þÿÿÿÿ8¿¹ð©¦1
+R
+java:S1854"6Remove this useless assignment to local variable "ps".(’Ìä=8¿¹ð©¦1
+S
+java:S1854"6Remove this useless assignment to local variable "ws".(ˆÄ™œ8¿¹ð©¦1
+D
+java:S1481"'Remove this unused "ws" local variable.(ˆÄ™œ8À¹ð©¦1
+C
+java:S1481"'Remove this unused "ps" local variable.(’Ìä=8À¹ð©¦1
+K
+java:S1481	")Remove this unused "maxw" local variable.(üðè„þÿÿÿÿ8À¹ð©¦1
+]	java:S125
+"<This block of commented-out lines of code should be removed.(ª ¬âÿÿÿÿÿ8À¹ð©¦1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã–²Æ8À¹ð©¦1
+F	java:S106,"+Replace this use of System.out by a logger.(ü„ê!8Â¹ð©¦1
+F	java:S106@"+Replace this use of System.out by a logger.(ü„ê!8Ä¹ð©¦1
+F	java:S106S"+Replace this use of System.out by a logger.(ü„ê!8Å¹ð©¦1
+F	java:S106d"+Replace this use of System.out by a logger.(ü„ê!8Æ¹ð©¦1
+C
+java:S1481}"&Remove this unused "d" local variable.(¸¥ðÛ8Ç¹ð©¦1
+W	java:S125"<This block of commented-out lines of code should be removed.(×Šín8Ç¹ð©¦1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8´äñ©¦1
+P
+java:S11444".Remove this unused private "customDp3" method.(“€›§þÿÿÿÿ8Ç¹ð©¦1
+P
+java:S1144G".Remove this unused private "customDp2" method.(¸õœœúÿÿÿÿ8Ç¹ð©¦1
+J
+java:S1144X"-Remove this unused private "customDp" method.(Ý†ª¯8Ç¹ð©¦1
+I
+java:S1144p"'Remove this unused private "dp" method.(çÑÂÌúÿÿÿÿ8Ç¹ð©¦1
