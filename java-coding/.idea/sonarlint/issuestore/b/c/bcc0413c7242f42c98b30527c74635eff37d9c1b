@@ -1,7 +1,0 @@
-
-u	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(¾¡Á8‹œñ¥1
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ñ—À¬8Œœñ¥1
-G	java:S106"+Replace this use of System.out by a logger.(ô¤„å8æœñ¥1
-X	java:S125&"<This block of commented-out lines of code should be removed.(‹òùÒ8ìœñ¥1
-C
-java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8ìœñ¥1
