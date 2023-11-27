@@ -20,24 +20,22 @@ public class S4_1337 {
 
         Collections.sort(list);
 
+        int[] counts = new int[n];
 
-        int[] count = new int[n];
-
-        for(int i = 0; i < n; i++) {
-            for(int j = 0; j < 5; j++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 1; j < 5; j++) {
                 if (!list.contains(list.get(i) + j)) {
-                    count[i]++;
-                }
+                    counts[i]++;
+                };
             }
         }
 
-        int min = count[0];
-        for(int c : count) {
-            if(min >= c) {
-                min = c;
+        int min = counts[0];
+        for (int count : counts) {
+            if (count <= min) {
+                min = count;
             }
         }
-
         System.out.println(min);
     }
 }
